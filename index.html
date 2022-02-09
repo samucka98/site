@@ -28,16 +28,6 @@
     <title>Samuel Ibiapino</title>
 
 	<script>
-  /**
-   * @Descricao:
-   * Essa funcao desabilita o menu opcoes do site impedindo que o usuario
-   * tenha acesso ao inspecionar elemento.
-   * 
-   * @Instrucoes:
-   * Instalar no wordpress use o widget HTML no topo da pagina e cole o conteudo
-   * Outra forma e colar o conteudo entre as tags <head> </head>
-  */
-
   function disableselect(e) {   
     return false;   
   }   
@@ -56,16 +46,6 @@
 </script>
 
 <script>
-  /**
-   * @Descricao:
-   * Essa funcao bloqueia a possibilidade do usuario obter 
-   * o codigo fonte da pagina pela combinacao de teclas CTRL + U
-   * 
-   * * @Instrucoes:
-   * Instalar no wordpress use o widget HTML no topo da pagina e cole o conteudo
-   * Outra forma e colar o conteudo entre as tags <head> </head>
-  */
-
   document.onkeydown = function(e) {
   if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {
     alert('Não permitido!');
